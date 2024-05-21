@@ -1,0 +1,20 @@
+
+div p{
+    color: rgb(15, 15, 214);
+}
+
+ul > li{
+    list-style-type: circle;
+}
+
+p > span{
+    color: red;
+}
+
+p + p{
+    background-color: rgb(156, 156, 156);
+}
+
+p ~ span{
+    color:red;
+}

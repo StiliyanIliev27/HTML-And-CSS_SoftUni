@@ -1,0 +1,32 @@
+h1{
+    color:rgb(37, 192, 192);
+}
+
+p{
+    font-size: 13px;
+}
+
+.highlighted{
+    background-color: rgb(20, 204, 20);
+}
+
+#main-title{
+    color: purple;
+}
+
+#special-paragraph{
+    font-style: italic;
+}
+
+ul{
+    background-color: rgb(203, 186, 186);
+}
+
+li{
+    list-style-type: circle;
+    color: rgb(232, 76, 76);
+}
+
+div{
+    background-color:coral;
+}
