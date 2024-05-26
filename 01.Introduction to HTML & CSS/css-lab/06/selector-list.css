@@ -1,0 +1,16 @@
+h1, h2, p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cadetblue;
+}
+
+nav a:hover, section .services:hover, footer .company:hover{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header, section, footer{
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}

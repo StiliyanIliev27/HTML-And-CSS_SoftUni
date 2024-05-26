@@ -1,0 +1,25 @@
+section p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section > article.highlighted + article p{
+    background-color: lightcoral;
+}
+
+ul.unique-list > li{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+ul.unique-list > li:nth-child(2){
+    color: lightcoral;
+}
+
+h2 ~ p{
+    color: blue;
+}
+
+.unique-list .links-ul .third-link a{
+    color: green;
+    text-decoration: none;
+}

@@ -1,0 +1,42 @@
+header nav ul li a{
+    text-decoration: none;
+    color:darkviolet;
+}
+
+.content > section.highlighted > article{
+    background-color: lightblue;
+}
+
+section + header{
+    background-color: red;
+}
+
+article > section.first-service{
+    color: red;
+}
+
+form.contact-form input[type^="text"]{
+    border: 2px solid blue;
+}
+
+nav ul li:first-child{
+    font-weight: bold;
+}
+
+nav ul li:last-child{
+    font-style: italic;
+}
+
+nav ul li:nth-child(2){
+    font-size: 19px;
+}
+
+section.highlighted h2#service-title::before{
+    content: ">> ";
+    color: darkred;
+}
+
+section.highlighted h2#service-title::after{
+    content: " <<";
+    color: darkred;
+}
