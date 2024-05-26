@@ -1,0 +1,8 @@
+article > header > p > time{
+    font-style: italic;
+    color: grey;
+}
+
+header p{
+    color:grey;
+}
