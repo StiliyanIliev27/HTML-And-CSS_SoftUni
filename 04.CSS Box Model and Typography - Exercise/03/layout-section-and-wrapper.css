@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,20 +9,18 @@ body{
     padding: 2em;
 }
 
-.site-container{
-    border: 2px solid darkblue;
+.wrapper{
+    border: 2px solid blue; 
     padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.site-container > *{
+.section{
     border: 2px solid black;
     padding: 2em;
 }
 
-.site-container > * + *{
+.section + .section{
     margin-top: 2em;
-}
-
-header, main, footer{
-    text-align: center;
 }
