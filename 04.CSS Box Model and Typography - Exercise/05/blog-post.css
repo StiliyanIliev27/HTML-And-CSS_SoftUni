@@ -35,6 +35,20 @@ body, h1, h2, h3, h4, h5{
 }
 
 .container > .content-container > section:nth-child(2) > p,
-.container > .content-container > section:nth-child(3) > p{
+.container > .content-container > section:nth-child(3) > p,
+.container > .content-container > section:nth-child(5) > p,
+.container > .content-container > section:nth-child(6)> p{
     line-height: 1.4em;
+}
+
+h2{
+    padding-bottom: 1em;
+}
+
+.container > .content-container > section:nth-child(5) > p{
+    max-width: 99%;
+}
+
+footer p{
+    font-style: italic;
 }

@@ -1,7 +1,0 @@
-Header
-
-Banner
-
-Articles
-
-Footer
