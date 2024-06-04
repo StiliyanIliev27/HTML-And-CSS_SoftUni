@@ -1,0 +1,28 @@
+body{
+    padding: 2em;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+.icons{
+    list-style-type: none;
+    display: block;
+}
+
+li{
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.icons li a{
+    color: black;
+    display: block;
+    width: 3em;
+    line-height: 3em;
+    background: #eee;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    aspect-ratio: 1/1;
+}
