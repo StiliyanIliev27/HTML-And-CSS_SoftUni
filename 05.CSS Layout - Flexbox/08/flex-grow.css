@@ -1,0 +1,34 @@
+.flex-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+    padding: 1em;
+    width: 400px;
+}
+
+.flex-item{
+    padding: 1em;
+    background: #eee;
+    border: 2px solid black;
+}
+
+.flex-grow-one .flex-item:nth-child(1){
+    flex-grow: 1;
+}
+
+.flex-grow-2nd-only .flex-item:nth-child(2){
+    flex-grow: 1;
+}
+
+.flex-grow-proportional .flex-item:nth-child(1){
+    flex-grow: 1;
+}
+
+.flex-grow-proportional .flex-item:nth-child(2){
+    flex-grow: 2;
+}
+
+.flex-grow-proportional .flex-item:nth-child(3){
+    flex-grow: 3;
+}
