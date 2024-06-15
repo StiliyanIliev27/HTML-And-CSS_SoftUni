@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.container{
+    background-color: #EEEEEE;
+    border-radius: 0.3em;
+    border: 1px solid #CECECE;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.buttons-container{
+    display: flex;
+}
+
+.buttons-container div{
+    padding: 0.5em;
+    border: 1px solid #CECECE;
+    border-radius: 0.3em;
+    color: darkorange;
+    font-weight: bold;
+    background-color: white;
+    margin-right: 0.5em;
+    transition: background 0.2s;
+}
+
+.buttons-container div:hover{
+    cursor: pointer;
+    background: #ffd895;
+}
+
+.buttons-container div:active{
+    opacity: 0.8;
+}
+
+

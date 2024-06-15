@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.container{
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.image-container{
+    border: 6px solid black;
+    border-radius: 0.2em;
+    padding: 1em;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.image-container img{
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
+    width: 80%;
+    position: relative;
+    right: 10%;
+    margin: 3em auto;
+}
+
+.image-container p{
+    position: relative;
+    top: 48%;
+    white-space: nowrap;
+    font-style: italic;
+    color: #ADADAD;
+    right: 101%;
+}
+
+.image-container::before{
+    content: 'Image 1 title';
+    position: relative;
+    top: 48%;
+    white-space: nowrap;
+    font-style: italic;
+    color: #ADADAD;
+    visibility: hidden;
+} 

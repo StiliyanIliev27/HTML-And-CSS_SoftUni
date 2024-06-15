@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 14px/1.5 Lato, sans-serif;
+    background: #eee;
+    padding: 2em;
+}
+
+.container{
+    margin: 2em auto;
+    max-width: 900px;
+    background: #fff;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.container > *{
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    padding: 1em;
+}
+
+.container > header,
+.container > footer{
+    flex: 0 0 100%;
+}
+
+.container > main{
+    flex: 0 0 70%;
+}
+
+.container > aside{
+    flex: 1 0 auto;
+}
+
+.main-reversed > header { order: 1 }
+.main-reversed > main { order: 3 }
+.main-reversed > aside { order: 2 }
+.main-reversed > footer { order: 4 }
+
