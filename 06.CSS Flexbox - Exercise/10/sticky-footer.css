@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.site{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    min-height: 100vh;
+    padding: 2em;
+    background-color: #eee;
+}
+
+header, main, footer{
+    padding: 2em;
+    border: 2px solid blue;
+}
+
+main{
+    flex-grow: 1;
+}

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2em;
+    background: #eee;
+    font: 14px/1.5 Lato, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    background: #DDDDDD;
+    padding: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0.3em 0 0 rgb(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    border: 1px solid #9D9D9D;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: "Playwrite NO", cursive;
+}
+
+.row{
+    display: flex;
+    gap: 0.5em;
+    width: 100%;
+    margin-bottom: 0.8em;
+}
+
+.first-row div{
+    padding: 0.2em;
+    border: 1px solid #CDCDCD;
+    border-radius: 0.3em;
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.2);
+    background: #EEEEEE;
+    text-align: center;
+    flex-grow: 1;
+    transition: background-color 0.2s;
+}
+
+.first-row div:hover{
+    cursor: pointer;
+    background-color: darkgoldenrod;
+}
+
+.first-row div:active{
+    opacity: 0.7;
+}
+
+.basic-row div{
+    padding: 0.5em;
+    border: 1px solid #CDCDCD;
+    border-radius: 0.3em;
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.2);
+    text-align: center;
+    flex-grow: 1;
+    transition: background-color 0.2s;
+}
+
+.enter-row{
+    max-width: 91%;
+}
+
+.enter-button{
+    position: relative;
+}
+
+.enter-button::after{
+    content: '';
+    aspect-ratio: 2/1;
+    position: absolute;
+    width: 3.5em;
+    height: 3.5em;
+    background: #EEEEEE;
+    top: 33.2px;
+    right: -0.8px;
+    border: 1px solid #CDCDCD;
+    border-top: none;
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.2);
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    transition: background-color 0.2s;
+}
+
+.shift{
+    flex-basis: 7em;
+}
+
+.keyboard .space{
+    flex-basis: 18em;
+    transition: background-color 0.2s;
+}
+
+.enter-button:hover::after{
+    background-color: darkorange;
+}
+
+.keyboard .special-button{
+    background-color: #EEEEEE;
+}
+
+.keyboard .special-button:hover{
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+.keyboard .special-button:active{
+    opacity: 0.7;
+}
+
+.keyboard .normal-button{
+    background-color: white;
+}
+
+.keyboard .normal-button:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+.keyboard .normal-button:active{
+    opacity: 0.7;
+}
+
+.keyboard .space:hover{
+    background-color: darkorchid;
+}
