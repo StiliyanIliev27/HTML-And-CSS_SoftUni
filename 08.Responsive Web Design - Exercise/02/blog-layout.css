@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 14px/1.5 Lato, sans-serif;
+    padding: 2em;
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1100px;
+    border: none;
+    border-radius: 0.3em;
+    background-color: white;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.container header, 
+.container footer{
+    flex: 1 0 100%;
+}
+
+.container main{
+    flex: 1 1 650px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.container aside{
+    flex: 1 0 250px;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+.container header{
+    margin-bottom: 1em;
+}
+
+.container header a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container header h1{
+    color: #090;
+    padding: 1em 1.5em;
+}
+
+.container header nav{
+    background-color: #333;
+    color: #CCC;
+}
+
+.container header nav ul{
+    display: flex;
+}
+
+.container header nav li{
+    display: block;
+    list-style: none outside;
+    flex: 1 0 auto;
+}
+
+.container header nav a{
+    display: block;
+    color: inherit;
+    padding: 1em 1.5em;
+}
+
+.container header nav a:hover{
+    background-color: darkorange;
+    color: #fff;
+}
+
+.container footer{
+    background-color: #333;
+    color: #CCC;
+    padding: 1em 1.5em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+
+@media (max-width: 800px){
+    .container header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}

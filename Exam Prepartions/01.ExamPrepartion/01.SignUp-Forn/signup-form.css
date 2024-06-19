@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 "Kode Mono", sans-serif;
+}
+
+body, input, textarea, button{
+    font: inherit;
+}
+
+body{
+    padding: 2em;
+    background-color: #C1BDBA;
+}
+
+form{
+    max-width: 748px;
+    margin: 0 auto;
+    background-color: #24333C;
+    color: white;
+    padding: 3.57rem;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+    font-size: 1.4em;
+}
+
+.nav{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.nav li{
+    flex: 1 1 auto;
+    display: block;
+    list-style-type: none;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1em 1.5em;
+    text-align: center;
+    background-color: #435359;
+}
+
+.nav li:nth-child(2) a{
+    color: #9AADAB;
+}
+
+.nav li:nth-child(2) a:hover{
+    background-color: #2D7668;
+    color: #fff;
+}
+
+.nav li.current a{
+    background-color: #1AB188;
+}
+
+form h2{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 2rem;
+    font-weight: normal;
+}
+
+.field{
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.field input{
+    width: 100%;
+    display: block;
+    border: 1px solid #A0B3B0;
+    background-color: transparent;
+    padding: 0.3em 0.5em;
+    line-height: 1;
+    outline: none;
+}
+
+.field label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.3em 0.5em;
+    color: #8B999E;
+    font-weight: normal;
+}
+
+.field input:required ~ label::after{
+    display: inline-block;
+    content: '*';
+    color:#1AB188;
+    padding-left: 0.2em;
+}
+
+form input[type="submit"]{
+    display: block;
+    width: 100%;
+    background-color: #1AB188;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 2rem; 
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+.flex{
+    display: flex;
+    gap: 2em;
+}
+
+.flex .field{
+    flex: 1 1 auto;
+}
